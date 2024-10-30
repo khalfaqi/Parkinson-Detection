@@ -12,3 +12,4 @@ src/ParkinsonClassification/constants/__init__.py
 src/ParkinsonClassification/entity/__init__.py
 src/ParkinsonClassification/pipeline/__init__.py
 src/ParkinsonClassification/utils/__init__.py
+src/ParkinsonClassification/utils/common.py
