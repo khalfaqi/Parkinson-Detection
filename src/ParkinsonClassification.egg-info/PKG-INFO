@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ParkinsonClassification
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/khalfaqi/Parkinson-Detection
+Author: khalfaqi
+Author-email: khalfaqi45@gmail.com
+Project-URL: Bug Tracker, https://github.com/khalfaqi/Parkinson-Detection/issues
+
+# Parkinson-Detection
