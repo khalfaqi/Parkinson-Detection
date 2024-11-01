@@ -4,6 +4,7 @@ data_ingestion:
   root_dir: artifacts/data_ingestion
   local_data_file: artifacts/data_ingestion/parkinson_dataset.zip
   unzip_dir: artifacts/data_ingestion
+  source_local_file: artifacts/data_ingestion/parkinson_dataset.zip 
 
 
 prepare_base_model:

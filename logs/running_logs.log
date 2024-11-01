@@ -105,3 +105,22 @@ Traceback (most recent call last):
   File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\config\configuration.py", line 26, in get_data_ingestion_config
     data_ingestion_config = DataIngestionConfig(
 TypeError: __init__() missing 1 required positional argument: 'source_local_file'
+[2024-11-01 19:54:29,116: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 19:54:29,131: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 19:54:30,036: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 19:54:30,046: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 19:54:30,046: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 19:54:30,046: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 19:54:30,051: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 19:54:30,051: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 19:54:30,051: INFO: common: created directory at: artifacts]
+[2024-11-01 19:54:30,051: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 19:54:30,051: ERROR: main: __init__() missing 1 required positional argument: 'source_local_file']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 13, in <module>
+    data_ingestion = DataIngestionTrainingPipeline()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 9, in __init__
+    self.config = ConfigurationManager().get_data_ingestion_config()  # Ambil konfigurasi saat inisialisasi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\config\configuration.py", line 26, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: __init__() missing 1 required positional argument: 'source_local_file'
