@@ -1,0 +1,107 @@
+[2024-11-01 19:28:02,499: INFO: _client: HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 408 Request Timeout"]
+[2024-11-01 19:31:46,381: INFO: _client: HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"]
+[2024-11-01 19:31:47,695: INFO: _client: HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"]
+[2024-11-01 19:31:48,996: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 19:31:48,996: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 19:31:50,071: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 19:31:50,086: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 19:31:50,091: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 19:31:50,091: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 19:31:50,099: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 19:31:50,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 19:31:50,113: INFO: common: created directory at: artifacts]
+[2024-11-01 19:31:50,115: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 19:31:50,115: ERROR: main: "'ConfigBox' object has no attribute 'source_url'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_URL'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_URL'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_URL'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_URL'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\config\configuration.py", line 29, in get_data_ingestion_config
+    source_URL=config.source_URL,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+[2024-11-01 19:46:59,997: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 19:47:00,067: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 19:47:01,426: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 19:47:01,434: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 19:47:01,436: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 19:47:01,436: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 19:47:01,436: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 19:47:01,441: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 19:47:01,441: INFO: common: created directory at: artifacts]
+[2024-11-01 19:47:01,441: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 19:47:01,441: ERROR: main: __init__() missing 1 required positional argument: 'source_local_file']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\config\configuration.py", line 27, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: __init__() missing 1 required positional argument: 'source_local_file'
+[2024-11-01 19:51:31,766: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 19:51:31,775: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 19:51:32,990: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 19:51:32,997: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 19:51:32,997: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 19:51:32,997: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 19:51:33,006: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 19:51:33,008: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 19:51:33,008: INFO: common: created directory at: artifacts]
+[2024-11-01 19:51:33,008: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 19:51:33,008: ERROR: main: __init__() missing 1 required positional argument: 'source_local_file']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 13, in <module>
+    data_ingestion = DataIngestionTrainingPipeline()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 9, in __init__
+    self.config = ConfigurationManager().get_data_ingestion_config()  # Ambil konfigurasi saat inisialisasi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\config\configuration.py", line 26, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: __init__() missing 1 required positional argument: 'source_local_file'
