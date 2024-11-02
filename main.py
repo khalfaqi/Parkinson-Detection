@@ -2,7 +2,7 @@ from ParkinsonClassification import logger
 from ParkinsonClassification.pipeline.pipeline_data_ingestion import DataIngestionTrainingPipeline
 from ParkinsonClassification.pipeline.pipeline_prepare_base_model import PrepareBaseModelTrainingPipeline
 from ParkinsonClassification.pipeline.pipeline_model_training import ModelTrainingPipeline
-from ParkinsonClassification.pipeline.pipeline_model_evaluation import EvaluationPipeline
+#from ParkinsonClassification.pipeline.pipeline_model_evaluation import EvaluationPipeline
 
 
 

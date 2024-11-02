@@ -25,6 +25,7 @@ class ConfigurationManager:
 
         data_ingestion_config = DataIngestionConfig(
             root_dir=Path(config.root_dir),
+            source_local_file=Path(config.source_local_file),
             local_data_file=Path(config.local_data_file),
             unzip_dir=Path(config.unzip_dir)
         )
@@ -54,7 +55,7 @@ class ConfigurationManager:
         training = self.config.training
         prepare_base_model = self.config.prepare_base_model
         params = self.params
-        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "parkinson_dataset")
+        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "parkinsons_dataset")
         create_directories([
             Path(training.root_dir)
         ])
@@ -77,7 +78,7 @@ class ConfigurationManager:
     def get_evaluation_config(self) -> EvaluationConfig:
         eval_config = EvaluationConfig(
             path_of_model="artifacts/training/model.h5",
-            training_data="artifacts/data_ingestion/parkinson_dataset",
+            training_data="artifacts/data_ingestion/parkinsons_dataset",
             mlflow_uri="https://dagshub.com/khalfaqi/Parkinson-Detection.mlflow",
             all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,

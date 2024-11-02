@@ -143,3 +143,188 @@ Traceback (most recent call last):
   File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\config\configuration.py", line 26, in get_data_ingestion_config
     data_ingestion_config = DataIngestionConfig(
 TypeError: __init__() missing 1 required positional argument: 'source_local_file'
+[2024-11-01 20:03:52,016: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 20:03:52,016: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 20:03:53,036: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 20:03:53,039: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 20:03:53,039: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 20:03:53,039: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 20:03:53,046: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 20:03:53,046: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 20:03:53,046: INFO: common: created directory at: artifacts]
+[2024-11-01 20:03:53,046: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 20:03:53,046: ERROR: main: __init__() missing 1 required positional argument: 'source_local_file']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 13, in <module>
+    data_ingestion = DataIngestionTrainingPipeline()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 9, in __init__
+    self.config = ConfigurationManager().get_data_ingestion_config()  # Ambil konfigurasi saat inisialisasi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\config\configuration.py", line 26, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: __init__() missing 1 required positional argument: 'source_local_file'
+[2024-11-01 20:06:50,418: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 20:06:50,436: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 20:06:51,176: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 20:06:51,186: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 20:06:51,189: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 20:06:51,189: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 20:06:51,189: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 20:06:51,189: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 20:06:51,189: INFO: common: created directory at: artifacts]
+[2024-11-01 20:06:51,189: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 20:06:51,189: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinson_dataset.zip']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 13, in main
+    data_ingestion.extract_zip_file()  # Menyesuaikan jika Anda tidak perlu mendownload file lagi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\components\data_ingestion.py", line 37, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Haura\miniconda3\envs\parkinson\lib\zipfile.py", line 1250, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinson_dataset.zip'
+[2024-11-01 20:12:09,166: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 20:12:09,191: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 20:12:10,697: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 20:12:10,706: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 20:12:10,711: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 20:12:10,711: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 20:12:10,719: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 20:12:10,719: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 20:12:10,719: INFO: common: created directory at: artifacts]
+[2024-11-01 20:12:10,729: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 20:12:10,729: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\data.zip']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 13, in main
+    data_ingestion.extract_zip_file()  # Menyesuaikan jika Anda tidak perlu mendownload file lagi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\components\data_ingestion.py", line 37, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Haura\miniconda3\envs\parkinson\lib\zipfile.py", line 1250, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\data.zip'
+[2024-11-01 20:13:46,951: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 20:13:46,990: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 20:13:48,698: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 20:13:48,708: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 20:13:48,708: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 20:13:48,708: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 20:13:48,714: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 20:13:48,716: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 20:13:48,719: INFO: common: created directory at: artifacts]
+[2024-11-01 20:13:48,719: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 20:13:48,719: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinsons_dataset.zip']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 13, in main
+    data_ingestion.extract_zip_file()  # Menyesuaikan jika Anda tidak perlu mendownload file lagi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\components\data_ingestion.py", line 37, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Haura\miniconda3\envs\parkinson\lib\zipfile.py", line 1250, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinsons_dataset.zip'
+[2024-11-01 20:20:06,046: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 20:20:06,103: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 20:20:07,676: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 20:20:07,680: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 20:20:07,686: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 20:20:07,686: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 20:20:07,691: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 20:20:07,691: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 20:20:07,691: INFO: common: created directory at: artifacts]
+[2024-11-01 20:20:07,696: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 20:20:07,696: ERROR: main: __init__() missing 1 required positional argument: 'source_local_file']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 13, in <module>
+    data_ingestion = DataIngestionTrainingPipeline()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 9, in __init__
+    self.config = ConfigurationManager().get_data_ingestion_config()  # Ambil konfigurasi saat inisialisasi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\config\configuration.py", line 26, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: __init__() missing 1 required positional argument: 'source_local_file'
+[2024-11-01 20:20:58,571: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 20:20:58,591: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 20:21:00,406: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 20:21:00,421: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 20:21:00,421: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 20:21:00,421: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 20:21:00,426: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 20:21:00,431: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 20:21:00,432: INFO: common: created directory at: artifacts]
+[2024-11-01 20:21:00,432: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 20:21:00,432: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinsons_dataset.zip']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 13, in main
+    data_ingestion.extract_zip_file()  # Menyesuaikan jika Anda tidak perlu mendownload file lagi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\components\data_ingestion.py", line 43, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Haura\miniconda3\envs\parkinson\lib\zipfile.py", line 1250, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinsons_dataset.zip'
+[2024-11-01 20:26:31,216: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 20:26:31,277: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 20:26:32,816: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 20:26:32,822: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 20:26:32,828: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 20:26:32,828: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 20:26:32,830: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 20:26:32,838: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 20:26:32,838: INFO: common: created directory at: artifacts]
+[2024-11-01 20:26:32,844: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 20:26:32,848: ERROR: main: __init__() missing 1 required positional argument: 'source_local_file']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 13, in <module>
+    data_ingestion = DataIngestionTrainingPipeline()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 9, in __init__
+    self.config = ConfigurationManager().get_data_ingestion_config()  # Ambil konfigurasi saat inisialisasi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\config\configuration.py", line 26, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: __init__() missing 1 required positional argument: 'source_local_file'
+[2024-11-01 20:28:32,914: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 20:28:32,953: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 20:28:34,452: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 20:28:34,452: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 20:28:34,452: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 20:28:34,452: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 20:28:34,452: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 20:28:34,467: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 20:28:34,467: INFO: common: created directory at: artifacts]
+[2024-11-01 20:28:34,467: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 20:28:34,467: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinsons_dataset.zip']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 13, in main
+    data_ingestion.extract_zip_file()  # Menyesuaikan jika Anda tidak perlu mendownload file lagi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\components\data_ingestion.py", line 43, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Haura\miniconda3\envs\parkinson\lib\zipfile.py", line 1250, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinsons_dataset.zip'
+[2024-11-01 20:31:42,151: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2024-11-01 20:31:42,202: INFO: helpers: Accessing as khalfaqi]
+[2024-11-01 20:31:43,787: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/khalfaqi/Parkinson-Detection "HTTP/1.1 200 OK"]
+[2024-11-01 20:31:43,795: INFO: helpers: Initialized MLflow to track repo "khalfaqi/Parkinson-Detection"]
+[2024-11-01 20:31:43,803: INFO: helpers: Repository khalfaqi/Parkinson-Detection initialized!]
+[2024-11-01 20:31:43,803: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-01 20:31:43,803: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-01 20:31:43,810: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-01 20:31:43,816: INFO: common: created directory at: artifacts]
+[2024-11-01 20:31:43,819: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-01 20:31:43,819: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinsons_dataset.zip']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 13, in main
+    data_ingestion.extract_zip_file()  # Menyesuaikan jika Anda tidak perlu mendownload file lagi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\components\data_ingestion.py", line 41, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Haura\miniconda3\envs\parkinson\lib\zipfile.py", line 1250, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinsons_dataset.zip'
+[2024-11-02 10:34:59,221: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 502 Bad Gateway"]
+[2024-11-02 10:35:00,547: INFO: _client: HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 502 Bad Gateway"]

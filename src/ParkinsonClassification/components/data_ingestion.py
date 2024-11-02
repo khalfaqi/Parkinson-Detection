@@ -23,16 +23,17 @@ class DataIngestion:
 
             logger.info(f"Copied data from {source_zip_path} to {zip_download_dir}")
 
+            # Cek apakah file berhasil disalin
+            if not os.path.exists(zip_download_dir):
+                raise FileNotFoundError(f"Failed to copy the ZIP file to: {zip_download_dir}")
+
         except Exception as e:
             raise e
 
     def extract_zip_file(self):
-        """
-        zip_file_path: str
-        Ekstrak file ZIP ke direktori data
-        Fungsi ini tidak mengembalikan nilai
-        """
         unzip_path = self.config.unzip_dir
         os.makedirs(unzip_path, exist_ok=True)
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
             zip_ref.extractall(unzip_path)
+        logger.info(f"Extracted {self.config.local_data_file} to {unzip_path}")
+
