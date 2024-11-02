@@ -1,4 +1,3 @@
-"""""
 from ParkinsonClassification.config.configuration import ConfigurationManager
 from ParkinsonClassification.components.model_evaluation import Evaluation
 from ParkinsonClassification import logger
@@ -30,4 +29,3 @@ if __name__ == '__main__':
         logger.exception(e)
         raise e
             
-"""

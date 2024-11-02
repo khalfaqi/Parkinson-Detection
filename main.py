@@ -2,9 +2,7 @@ from ParkinsonClassification import logger
 from ParkinsonClassification.pipeline.pipeline_data_ingestion import DataIngestionTrainingPipeline
 from ParkinsonClassification.pipeline.pipeline_prepare_base_model import PrepareBaseModelTrainingPipeline
 from ParkinsonClassification.pipeline.pipeline_model_training import ModelTrainingPipeline
-#from ParkinsonClassification.pipeline.pipeline_model_evaluation import EvaluationPipeline
-
-
+from ParkinsonClassification.pipeline.pipeline_model_evaluation import EvaluationPipeline
 
 
 STAGE_NAME = "Data Ingestion stage"
@@ -44,8 +42,6 @@ except Exception as e:
         raise e
 
 
-
-"""""
 STAGE_NAME = "Evaluation stage"
 try:
    logger.info(f"*******************")
@@ -57,4 +53,3 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
-"""

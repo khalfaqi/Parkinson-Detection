@@ -328,3 +328,20 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinsons_dataset.zip'
 [2024-11-02 10:34:59,221: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 502 Bad Gateway"]
 [2024-11-02 10:35:00,547: INFO: _client: HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 502 Bad Gateway"]
+[2024-11-02 10:55:12,647: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-02 10:55:12,666: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-02 10:55:12,668: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-02 10:55:12,668: INFO: common: created directory at: artifacts]
+[2024-11-02 10:55:12,668: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-02 10:55:12,668: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinsons_dataset.zip']
+Traceback (most recent call last):
+  File "C:\Users\Haura\Documents\Parkinson Detection\Parkinson-Detection\main.py", line 14, in <module>
+    data_ingestion.main()
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\pipeline\pipeline_data_ingestion.py", line 13, in main
+    data_ingestion.extract_zip_file()  # Menyesuaikan jika Anda tidak perlu mendownload file lagi
+  File "c:\users\haura\documents\parkinson detection\parkinson-detection\src\ParkinsonClassification\components\data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Haura\miniconda3\envs\parkinson\lib\zipfile.py", line 1250, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\parkinsons_dataset.zip'
+[2024-11-02 11:04:20,717: INFO: _client: HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 502 Bad Gateway"]
