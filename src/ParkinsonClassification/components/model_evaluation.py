@@ -21,7 +21,7 @@ class Evaluation:
         # Membuat generator data untuk validasi
         datagenerator_kwargs = dict(
             rescale=1./255,             # Normalisasi piksel gambar (0-1)
-            validation_split=0.30       # Menggunakan 30% data sebagai data validasi
+            validation_split=0.2      # Menggunakan 20% data sebagai data validasi
         )
 
         dataflow_kwargs = dict(
