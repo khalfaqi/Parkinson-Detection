@@ -673,3 +673,37 @@ Traceback (most recent call last):
     raise IOError(
 OSError: No file or directory found at model\model.h5
 [2024-11-10 22:30:04,734: INFO: _internal: 127.0.0.1 - - [10/Nov/2024 22:30:04] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-11-10 22:41:39,224: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2024-11-10 22:41:39,228: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-10 22:41:46,450: INFO: _internal: 127.0.0.1 - - [10/Nov/2024 22:41:46] "GET / HTTP/1.1" 200 -]
+[2024-11-10 22:42:00,770: INFO: _internal: 127.0.0.1 - - [10/Nov/2024 22:42:00] "POST /predict HTTP/1.1" 200 -]
+[2024-11-10 22:42:18,234: INFO: _internal: 127.0.0.1 - - [10/Nov/2024 22:42:18] "POST /predict HTTP/1.1" 200 -]
+[2024-11-10 23:09:15,261: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2024-11-10 23:09:15,261: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-10 23:09:30,031: INFO: _internal: 127.0.0.1 - - [10/Nov/2024 23:09:30] "GET / HTTP/1.1" 200 -]
+[2024-11-10 23:11:04,874: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2024-11-10 23:11:04,874: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-10 23:11:07,431: INFO: _internal: 127.0.0.1 - - [10/Nov/2024 23:11:07] "GET / HTTP/1.1" 200 -]
+[2024-11-10 23:11:09,103: INFO: _internal: 127.0.0.1 - - [10/Nov/2024 23:11:09] "GET / HTTP/1.1" 200 -]
+[2024-11-10 23:13:44,657: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2024-11-10 23:13:44,657: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-10 23:13:51,998: INFO: _internal: 127.0.0.1 - - [10/Nov/2024 23:13:51] "GET / HTTP/1.1" 200 -]
+[2024-11-10 23:14:01,480: INFO: _internal: 127.0.0.1 - - [10/Nov/2024 23:14:01] "[31m[1mPOST /predict HTTP/1.1[0m" 415 -]
+[2024-11-10 23:23:25,221: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2024-11-10 23:23:25,221: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-10 23:23:56,851: INFO: _internal: 127.0.0.1 - - [10/Nov/2024 23:23:56] "[31m[1mPOST /predict HTTP/1.1[0m" 415 -]
